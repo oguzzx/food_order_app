@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Rubik+Microbe&display=swap");
+
+.home {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.home .leftside {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home .leftside .img {
+  width: 80%;
+  height: 80%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.home .leftside .img img {
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+}
+
+.home .rightside {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+
+.home .rightside .ust {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.home .rightside .ust h3 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-family: "Rubik Microbe", cursive;
+  margin-bottom: 45px;
+}
+
+.home .rightside .alt {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 75px;
+}
+
+.home .rightside .alt .img {
+  width: 80%;
+  height: 80%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.home .rightside .alt .img img {
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+  border: 1px solid yellow;
+  box-shadow: 0 0 10px yellow;
+}
+
+.home .rightside .alt .order_button {
+  width: 30%;
+  height: 50px;
+  background-color: #f9a826;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+  line-height: 50px;
+}
+
+.home .rightside .alt .order_button a {
+  text-decoration: none;
+}
+
+.home .rightside .alt .order_button a:hover {
+  background-color: #f9a826;
+  color: white;
+}

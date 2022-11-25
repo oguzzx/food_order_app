@@ -1,0 +1,109 @@
+
+.content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: calc(100vh - 60px);
+    overflow-y: hidden;
+}
+.content h2{
+    text-align: center;
+    text-decoration: underline;
+}
+.content .spiaris{
+    display: flex;
+    height: 100%;
+}
+.form{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items:center;
+    margin-top: 15px;
+}
+
+.dönersections input{
+    width: 150px;
+    height: 150px;
+    margin-left: 10px;
+    border: 1px solid black;
+}
+.dönersections input:hover{
+    background-color: #fc8d03;
+}
+.dönersections input:focus{
+    background-color: #1e7f8c;
+}
+.siparişiniz{
+    width: 30%;
+    border-left: 2px solid rgb(95, 104, 104,.5);
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    padding: 10px 30px;
+    text-align: center;
+}
+.siparişiniz h1{
+    font-style: italic;
+    border-bottom: 4px solid black;
+}
+.siparişiniz ul li{
+    font-weight: bold;
+    word-wrap:break-word;
+    text-align: left;
+}
+.isim , .adress , .telefon , .ekistek{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    text-align: center;
+}
+input , textarea{
+    padding: 5px;
+    margin-top: 5px;
+}
+.soğan , .ketcapgroup{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.siparişiniz a{
+    text-decoration: none;
+    padding: 10px;
+    color: #fff;
+    background-color: #fc8d03;
+    border-radius: 5px;
+    cursor: pointer;
+}
+@media screen and (max-width:480px) {
+    .content .spiaris{
+        flex-direction: column;
+        align-items: center;
+    }
+    .content h2{
+        font-size: 18px;
+        margin: 10px 0 5px 0;
+    }
+
+    .form{
+        width: 100%;
+    }
+    .isim , .adress , .telefon , .ekistek{
+        width: 80%;
+    }
+    .dönersections{
+        width: 100%;
+        text-align: center;
+    }
+    .ketcapgroup{
+        width:90%;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .siparişiniz{
+        width: 100%;
+        border: none;
+    }
+}
